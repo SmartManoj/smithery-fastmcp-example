@@ -1,3 +1,4 @@
+import os
 from fastmcp import FastMCP
 
 mcp = FastMCP("Demo 🚀")
@@ -8,4 +9,4 @@ def add(a: int, b: int) -> int:
     return a + b
 
 if __name__ == "__main__":
-    mcp.run()
+    mcp.run('streamable-http', port=os.getenv('PORT'))
