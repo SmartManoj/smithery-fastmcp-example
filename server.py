@@ -1,5 +1,5 @@
 import os
-from fastmcp import FastMCP
+from mcp.server.fastmcp import FastMCP
 import uvicorn
 from starlette.middleware.cors import CORSMiddleware
 
